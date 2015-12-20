@@ -138,6 +138,10 @@ def getAllInfo():
                             model = procmodel.replace("fusionhd", "Fusion HD")
                         elif procmodel == "fusionhdse":
                             model = procmodel.replace("fusionhdse", "Fusion HD SE")
+                elif (procmodel.startswith("force1")):
+                	brand = "Iqon"
+                	model = procmodel.replace("force1", "Force 1 ")
+                	
 	elif fileExists("/proc/stb/info/azmodel"):
 		brand = "AZBox"
 		f = open("/proc/stb/info/model",'r') # To-Do: Check if "model" is really correct ...
